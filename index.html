@@ -39,6 +39,10 @@
             //desenhando a raquete direita
             canvasCtx.fillRect(window.innerWidth-lineWidth-10, 150, lineWidth, 200)
            
+            // desenhando a bola 
+            canvasCtx.beginPath  ()
+            canvasCtx.arc(500, 300, 20, 0, 2 * Math.PI, false)
+            canvasCtx.fill()
         }
 
         setup()
